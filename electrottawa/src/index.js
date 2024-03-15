@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'; // Import Bootstrap JavaScript
+
 
 
 ReactDOM.render(
