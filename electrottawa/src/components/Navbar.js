@@ -1,4 +1,7 @@
+import {Link} from "react-router-dom"
 const Navbar = () => {
+ 
+
   return (
     <div id="navigationBar">
       {/* creation of the navbar component inspired by https://getbootstrap.com/docs/5.0/components/navbar/*/}
@@ -9,38 +12,43 @@ const Navbar = () => {
           <div className=" p-2 flex-xl-shrink-1 bd-highlight" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">Home</a>
+                <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" to="/services" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a className="dropdown-item" href="/services">All services</a></li>
-                  <li><a className="dropdown-item" href="/">Laptop repair</a></li>
-                  <li><a className="dropdown-item" href="/">Phone repair</a></li>
+                <li><Link className="dropdown-item" to="/services">All services</Link></li>
+                  <li><Link className="dropdown-item" to="/">Laptop repair</Link></li>
+                  <li><Link className="dropdown-item" to="/">Phone repair</Link></li>
                 </ul>
               </li>
 
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="/products" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" href="/products" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a className="dropdown-item" href="/products">All products</a></li>
-                  <li><a className="dropdown-item" href="/">Phones</a></li>
-                  <li><a className="dropdown-item" href="/">Laptops</a></li>
-                  <li><a className="dropdown-item" href="/">Smart Watches</a></li>
-                  <li><a className="dropdown-item" href="/">Phone Cases</a></li>
-                  <li><a className="dropdown-item" href="/">Audio</a></li>
+                  <li>
+                  <Link className="dropdown-item" to ="/products">All products</Link>
+                    </li>
+                  <li><Link className="dropdown-item" to="/">Phones</Link></li>
+                  <li><Link className="dropdown-item" to="/">Laptops</Link></li>
+                  <li><Link className="dropdown-item" to="/">Smart Watches</Link></li>
+                  <li><Link className="dropdown-item" to="/">Phone Cases</Link></li>
+                  <li><Link className="dropdown-item" to="/">Audio</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/booking">Booking</a>
+                <Link className="nav-link" to="/booking">Booking</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/faq">FAQ</Link>
               </li>
 
             </ul>
@@ -49,14 +57,14 @@ const Navbar = () => {
           <div className="p-2 flex-shrink-1 bd-highlight">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="/cart"><span className="material-symbols-outlined">
+                <Link className="nav-link" to="/cart"><span className="material-symbols-outlined">
                   shopping_cart
-                </span></a>
+                </span></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/profile"><span className="material-symbols-outlined">
+                <Link className="nav-link" to="/profile"><span className="material-symbols-outlined">
                   person
-                </span></a>
+                </span></Link>
               </li>
             </ul>
           </div>

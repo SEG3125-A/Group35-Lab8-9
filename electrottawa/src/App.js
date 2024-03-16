@@ -14,10 +14,11 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-     <Router>  
+     <Router> 
+        <Navbar/> 
         <Switch>
-          <Navbar />
-          <Route path='/' element={<Home />} /> 
+  
+          <Route path='/' exact component={Home} /> 
           <Route path='/products' component={Products} />
           <Route path='/services' component={Services} />
           <Route path='/booking' component={Booking} />
