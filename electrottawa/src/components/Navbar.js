@@ -62,7 +62,7 @@ const Navbar = () => {
                 </span></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/profile"><span className="material-symbols-outlined">
+                <Link className="nav-link" to="/signIn"><span className="material-symbols-outlined">
                   person
                 </span></Link>
               </li>
