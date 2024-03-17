@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div id="navigationBar">
       {/* creation of the navbar component inspired by https://getbootstrap.com/docs/5.0/components/navbar/*/}
-      <h1>ElectrOttawa</h1>
+      <h1 className="p-1">ElectrOttawa</h1>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid d-flex bd-highlight">
 
@@ -27,7 +27,7 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle" href="/products" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" to="/products" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
