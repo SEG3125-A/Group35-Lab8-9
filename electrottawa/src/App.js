@@ -1,4 +1,5 @@
 import './App.css';
+import { CartContextProvider } from 'react-use-shoppingcart';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -9,11 +10,14 @@ import Contact from './pages/Contact';
 import Faq from './pages/Faq';
 import Cart from './pages/Cart';
 import Profile from './pages/Profile';
+import Checkout from './pages/Checkout';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
+      <CartContextProvider>
      <Router> 
         <Navbar/> 
         <Switch>
@@ -26,9 +30,12 @@ function App() {
           <Route path='/faq' component={Faq} />
           <Route path='/cart' component={Cart} />
           <Route path='/profile' component={Profile} />
+          <Route path='/checkout' component={Checkout} />
+
         </Switch>
       
       </Router>
+      </CartContextProvider>
     </div>
   );
 }
