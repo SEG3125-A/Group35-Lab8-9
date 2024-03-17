@@ -1,5 +1,6 @@
 import './App.css';
 import { CartContextProvider } from 'react-use-shoppingcart';
+import './main.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';

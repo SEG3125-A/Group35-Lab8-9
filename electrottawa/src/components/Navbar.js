@@ -5,7 +5,7 @@ const Navbar = () => {
     <div id="navigationBar">
 
       {/* creation of the navbar component inspired by https://getbootstrap.com/docs/5.0/components/navbar/*/}
-      <h1>ElectrOttawa</h1>
+      <h1 className="p-1">ElectrOttawa</h1>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid d-flex bd-highlight">
 
