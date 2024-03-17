@@ -18,10 +18,6 @@ function ProductCard(props) {
             <Col>Name:</Col>
             <Col>{props.product.name}</Col>
           </Row>
-          {/* <Row>
-            <Col>Category:</Col>
-            <Col>{Category}</Col>
-          </Row> */}
           <Row>
             <Col>Brand:</Col>
             <Col>{props.product.Brand}</Col>
@@ -32,11 +28,12 @@ function ProductCard(props) {
           </Row>
 
         </Card.Text>
-        <Container className='text-center'>
+        
+      </Card.Body>
+      <Container className='text-center' style={{ paddingBottom: '10px' }}>
           {/* as={Link} to="/cart" variant="danger" */}
           <Button onClick={() => addToCart(props.product)} variant="danger">Add to cart</Button>
         </Container>
-      </Card.Body>
     </Card>
   );
 }

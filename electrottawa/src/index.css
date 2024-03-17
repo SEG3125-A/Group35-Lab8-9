@@ -45,7 +45,7 @@ body {
 .cart{
   padding-top: 1%;
 }
-.nav-link:active {
+.selected {
   color: #b22222;
 }
 
@@ -73,7 +73,8 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #fcbaba;
+  background-color: #f4c5c5;
+  border-radius: 6px ;
 }
 
 code {
