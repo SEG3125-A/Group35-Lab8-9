@@ -6,3 +6,49 @@
 .accordion-button:not(.collapsed){
     color:black;
 }
+
+
+/* Sign In */
+
+.customLog{
+    background-color: #fcbaba;
+    color: black;
+    border: 2px solid #fcbaba;
+}
+
+.customLog :hover{
+    background-color: #d2b6b6;
+    color: black;
+}
+
+
+/* Dashbaord */
+
+
+.nav-linkCustom{
+    color: black;
+    --bs-nav-link-hover-color:black;
+    /* border-bottom: 2px solid black; */
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+.nav-linkCustom :hover{
+    --bs-nav-link-hover-color:black;
+    color: black;
+}
+
+.active{
+    color: black;
+    background-color: #fff;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #fff;
+    color: black;
+}
+
+.bg-colorCustom{
+    background-color: #FFF3F3;
+}

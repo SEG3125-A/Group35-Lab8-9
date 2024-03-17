@@ -12,7 +12,9 @@ import Faq from './pages/Faq';
 import Cart from './pages/Cart';
 import Profile from './pages/Profile';
 import Checkout from './pages/Checkout';
+import { SignIn } from './pages/SignIn';
 import Footer from './components/Footer';
+import { DashBoard } from './pages/DashBoard';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route path='/cart' component={Cart} />
           <Route path='/profile' component={Profile} />
           <Route path='/checkout' component={Checkout} />
+          <Route path='/signIn' component={SignIn}/>
+          <Route path='/dashboard' component={DashBoard}/>
 
         </Switch>
       

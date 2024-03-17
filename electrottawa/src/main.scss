@@ -15,7 +15,7 @@ $border-radius: .4rem;
 $success: #7952b3;
 $primary: #fcbaba;
 $primary-rgb: red;
-$secondary: #FFF3F3;
+$secondary: #d2b6b6;
 
 $border-color:$primary !important;
 // Accordion stuff begin
@@ -49,3 +49,4 @@ $input-focus-border-color: $primary;
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/dropdown";
 @import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/forms"
