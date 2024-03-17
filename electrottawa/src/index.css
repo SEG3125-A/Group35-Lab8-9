@@ -13,7 +13,7 @@ body {
 .titre{
   border-bottom-style: solid;
   border-width: 5px;
-  border-color: #b22222;
+  border-color: red;
 }
 #checkoutcontainer{
   padding: 2% 7%;

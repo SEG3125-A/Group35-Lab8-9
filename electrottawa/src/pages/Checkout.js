@@ -65,7 +65,7 @@ const Checkout = () => {
                       <p>Thank you for doing business with us. A confirmation email will be sent to you with a summary of the invoice</p>
                     </Card.Body>
                     <Card.Footer>
-                      <Button onClick={()=>{handleStart(); clearCart()}}>Buy another Services</Button>
+                      <Button className="btn btn-danger" onClick={()=>{handleStart(); clearCart()}}>Buy another Services</Button>
                     </Card.Footer>
                   </Card> :
                   <Card>
