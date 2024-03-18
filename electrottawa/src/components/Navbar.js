@@ -48,11 +48,6 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" exact to="/services" activeStyle={{
-                  color: "red"
-                }}>Services</NavLink>
-              </li>
-              <li className="nav-item">
                 <NavLink className="nav-link" exact to="/booking" activeStyle={{
                   color: "red"
                 }}>Booking</NavLink>
