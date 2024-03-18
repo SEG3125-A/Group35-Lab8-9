@@ -1,6 +1,5 @@
 import './styles/custom.css'
 
-
 export const Services = ()=>{
   return(
     <>
