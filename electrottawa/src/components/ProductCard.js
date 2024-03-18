@@ -30,9 +30,9 @@ function ProductCard(props) {
         </Card.Text>
         
       </Card.Body>
-      <Container className='text-center' style={{ paddingBottom: '10px' }}>
+      <Container className='text-center' style={{ paddingBottom: '10px' }}  >
           {/* as={Link} to="/cart" variant="danger" */}
-          <Button onClick={() => addToCart(props.product)} variant="danger">Add to cart</Button>
+          <Button  onClick={() => addToCart(props.product)} variant="danger">Add to cart</Button>
         </Container>
     </Card>
   );
