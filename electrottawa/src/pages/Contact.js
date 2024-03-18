@@ -6,8 +6,7 @@ import Footer from '../components/Footer';
 
 function Contact(){
   return ( 
-    <div>
-      <Navbar />
+
     <div class="contact-container">
         <div class="form-section">
             <h2>Contact</h2>
@@ -51,7 +50,7 @@ function Contact(){
             </div>
         </div>
     </div>
-    </div>
+
    );
 }
  

@@ -22,7 +22,7 @@ body, html {
 }
 
 .form-section h2 {
-    color: #a94442; /* Dark pink color for the 'Contact' title */
+    color: #a94442; 
     margin-bottom: 1em;
 }
 
@@ -33,9 +33,8 @@ body, html {
 .input-group label {
     display: block;
     margin-bottom: .5em;
-    color: #a94442; /* Same color as the title for consistency */
+    color: #a94442; 
 }
-
 .input-group input,
 .input-group textarea {
     width: 100%;
@@ -51,7 +50,7 @@ body, html {
 }
 
 button {
-    background-color: #a94442; /* Matching dark pink */
+    background-color: #a94442; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -65,22 +64,30 @@ button:hover {
 }
 
 .info-section {
-    width: 40%;
+    display: block; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+    justify-content: space-between; /* Puts space between the map and contact info */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    gap: 20px; /* Adds space between flex items */
+    width: 50%; /* Takes full width of the container */
 }
 
 #map {
-    height: 250px; /* Adjust as needed */
-    margin-bottom: 1em;
+   
+    min-width: 250px; /* Minimum width before wrapping */
+    height: 250px; /* Fixed height */
 }
 
 .contact-info {
+   
+    min-width: 250px; /* Minimum width before wrapping */
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
 }
 
 .contact-info p {
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 
-/* You can add @media queries here for a responsive design */
