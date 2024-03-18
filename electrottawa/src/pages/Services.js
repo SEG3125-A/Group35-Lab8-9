@@ -7,15 +7,15 @@ export const Services = ()=>{
       <h2 className="m-3 p-3 col-md-3 col-6 mx-auto text-center border-5 border-bottom border-info">Laptop Services</h2>
         <hr className="bg-danger border-2 border-top border-danger" /> 
       
-        <div className="d-flex flex-row p-3 gap-4 flex-wrap justify-content-center" style="background-color: #FFEAEA">
+        <div className="d-flex flex-row p-3 gap-4 flex-wrap justify-content-center" style={{backgroundColor: "#FFEAEA"}}>
                 <div className="text-center">
-                    <div className="card border-3 border-dark" style="width: 300px;">
+                    <div className="card border-3 border-dark" style={{width: "300px"}}>
                         <img className="card-img-top" src="./styles/images/BRL.jpeg" alt="BR"></img>
                         <div className="card-body">
-                            <h4 style="margin-top: 10px;" className="card-title border-bottom border-info">Battery Replacement</h4>
-                            <p style="margin-top: 20px;" className="card-text">
+                            <h4 style={{marginTop: "10px"}} className="card-title border-bottom border-info">Battery Replacement</h4>
+                            <p style={{marginTop: "20px"}} className="card-text">
                                 Does your phone get discharged faster than usual? It might be time to replace your battery. Bring us your phone and sort that out!</p>
-                            <a style="margin-bottom: 5px; color:white;" className="btn btn-primary" href="booking.html">Book Now</a>
+                            <a style={{marginBottom: "5px", color:"white"}} className="btn btn-primary" href="booking.html">Book Now</a>
                         </div>
                     </div>
                 </div>
