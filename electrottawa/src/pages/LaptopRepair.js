@@ -5,7 +5,6 @@ export const LaptopRepair = ()=>{
     <>
     <div className="container-fluid px-0 ">
       <h2 className="m-3 p-3 col-md-3 col-6 mx-auto text-center border-5 border-bottom border-info">Laptop Services</h2>
-        <hr className="bg-danger border-2 border-top border-danger" /> 
       
         <div className="d-flex flex-row p-3 gap-4 flex-wrap justify-content-center" style={{backgroundColor: '#ffeaea'}}>
                 <div className="text-center">
@@ -14,7 +13,7 @@ export const LaptopRepair = ()=>{
                         <div className="card-body">
                             <h4 style={{marginTop: '10px'}} className="card-title border-bottom border-info">Battery Replacement</h4>
                             <p style={{marginTop: '20px'}} className="card-text">
-                                Does your phone get discharged faster than usual? It might be time to replace your battery. Bring us your phone and sort that out!</p>
+                                Does your device get discharged faster than usual? It might be time to replace your battery. Bring us your phone and sort that out!</p>
                             <Link style={{marginBottom: '5px', color:'white'}} className="btn btn-primary" to="/booking">Book Now</Link>
                         </div>
                     </div>
