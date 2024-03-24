@@ -106,7 +106,7 @@ export default class PaymentForm extends React.Component {
                     type='tel'
                     name='expiry'
                     className='form-control'
-                    placeholder='Valid Thru'
+                    placeholder='Expiration date'
                     pattern='\d\d/\d\d'
                     required
                     onChange={this.handleInputChange}
