@@ -14,7 +14,7 @@ body {
 .titre{
   border-bottom-style: solid;
   border-width: 5px;
-  border-color: red;
+  border-color: #b22222;
 }
 #checkoutcontainer{
   padding: 2% 7%;
@@ -57,6 +57,10 @@ body {
 
 }
 
+Form.Control{
+  border-color: #e7e0e0;
+}
+
 #navigationBar {
   background-color: #f8e1e1;
 }
@@ -78,9 +82,13 @@ body {
     'opsz' 24
 }
 
+.addCart:hover{
+  background: #8a3c3b;
+}
+
 .nav-link:hover {
   border-bottom-style:solid ;
-  border-bottom-color: red;
+  border-bottom-color: #b22222;
   border-bottom-width: 4px;
 }
 

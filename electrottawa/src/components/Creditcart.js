@@ -56,7 +56,7 @@ export default class PaymentForm extends React.Component {
         return (
           <div key='Payment'>
             <div className='App-payment'>
-              <p>please input your information below</p>
+              <p>Please input your information below</p>
               <Card
                 number={number}
                 name={name}
@@ -78,6 +78,7 @@ export default class PaymentForm extends React.Component {
                     required
                     onChange={this.handleInputChange}
                     onFocus={this.handleInputFocus}
+                    style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                   />
                 </div>
                 <br></br>
@@ -94,6 +95,7 @@ export default class PaymentForm extends React.Component {
                     required
                     onChange={this.handleInputChange}
                     onFocus={this.handleInputFocus}
+                    style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                   />
                 </div>
                 <br></br>
@@ -109,6 +111,7 @@ export default class PaymentForm extends React.Component {
                     required
                     onChange={this.handleInputChange}
                     onFocus={this.handleInputFocus}
+                    style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                   />
                 </div>
                 <br></br>
@@ -124,6 +127,7 @@ export default class PaymentForm extends React.Component {
                     required
                     onChange={this.handleInputChange}
                     onFocus={this.handleInputFocus}
+                    style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                   />
                 </div>
                 <input type='hidden' name='issuer' value={issuer} />

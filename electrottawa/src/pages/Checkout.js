@@ -43,7 +43,7 @@ const Checkout = () => {
   }
 
   return (
-    <div>
+    <div style={{ marginTop: '10px', marginBottom: '10px'}}>
       <div className="d-flex justify-content-center"><h1 className="titre">CHECKOUT</h1></div>
       <div className="container text-center">
       <div className="row">
@@ -65,7 +65,7 @@ const Checkout = () => {
                       <p>Thank you for doing business with us. A confirmation email will be sent to you with a summary of the invoice</p>
                     </Card.Body>
                     <Card.Footer>
-                      <Button className="btn btn-danger" onClick={()=>{handleStart(); clearCart()}}>Buy another Services</Button>
+                      <Button className='addCart' style={{backgroundColor: '#b22222', color: 'white' }} onClick={()=>{handleStart(); clearCart()}}>Buy another Services</Button>
                     </Card.Footer>
                   </Card> :
                   <Card>
@@ -78,8 +78,8 @@ const Checkout = () => {
                       />
                     </Card.Body>
                     <Card.Footer className="d-flex justify-content-between">
-                      <Button className="btn btn-danger" onClick={prevButton} disabled={index === 1}>Previous</Button>
-                      <Button className="btn btn-danger" onClick={nextButton}>{index === totalPagesCount ? 'Submit' : 'Next'}</Button>
+                      <Button className='addCart' style={{ fontSize: '1.7ex', backgroundColor: '#b22222', color: 'white' }} onClick={prevButton} disabled={index === 1}>Previous</Button>
+                      <Button className='addCart' style={{ fontSize: '1.7ex', backgroundColor: '#b22222', color: 'white' }} onClick={nextButton}>{index === totalPagesCount ? 'Submit' : 'Next'}</Button>
                     </Card.Footer>
                   </Card>
               }
@@ -87,7 +87,7 @@ const Checkout = () => {
           </Container>
         </div>
         <div className="cartContainer col-4 align-self-center" id='orderSum'>
-          <div><h6>Order Summary</h6></div>
+          <div><h6 style={{color:'#b22222'}}>Order Summary</h6></div>
           {cartItems.map(item => {
             sum += item.product.price * item.qty;
             return (

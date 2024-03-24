@@ -37,7 +37,7 @@ function ProductCard(props) {
       <Container className='text-center' style={{ paddingBottom: '14px' }}  >
           {/* as={Link} to="/cart" variant="danger" */}
           <Row>
-            <Col> <Button style={{ fontSize: '1.6ex' }} onClick={() => addToCart(props.product)} variant="danger">Add to cart</Button></Col>
+            <Col> <Button className='addCart' style={{ fontSize: '1.6ex', backgroundColor: '#b22222', color: 'white' }} onClick={() => addToCart(props.product) }>Add to cart</Button></Col>
             <Col><Button style={{ fontSize: '1.6ex' }} onClick={handleClick} variant="dark">View details</Button></Col>
           </Row>
          

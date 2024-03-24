@@ -37,7 +37,7 @@ const ProductDetails = (props) => {
         </div>
         <div className="col text-start" style={{marginLeft: '40px'}}>
           <p id="prodTitle" style={{fontWeight: 'bolder', fontSize: '30px', height: '25px'}}>{product.name} </p>
-          <p id="prodPrice" style={{fontWeight: 'bold', color: 'red', fontSize: '20px'}}>{product.price}$</p>
+          <p id="prodPrice" style={{fontWeight: 'bold', color: '#b22222', fontSize: '20px'}}>{product.price}$</p>
           <div style={{ paddingTop: "15px" }}>
             <p style={{fontWeight: 'bolder'}}>Product description:</p>
             <p style={{fontSize: '14px'}}>{product.description}</p>
@@ -56,7 +56,7 @@ const ProductDetails = (props) => {
                 />
               </Form.Group>
 
-              <Button style={{ fontSize: '1.7ex', width:'150px' }} variant="danger" type="submit">
+              <Button className='addCart' style={{ fontSize: '1.7ex', width:'150px', backgroundColor: '#b22222', color: 'white' }} variant="danger" type="submit">
                 Add to Cart
               </Button>
               <Button style={{ fontSize: '1.7ex', width:'150px', marginLeft: '10px' }} variant="dark" onClick={handleClick}>Go to Cart</Button>

@@ -14,12 +14,13 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'text':
         return (
           <>
-            <Form.Label>{item.label}</Form.Label>
+            <Form.Label style={{height: '10px'}}>{item.label}</Form.Label>
             <Form.Control
               type="text"
               id={item.label}
               onChange={(e) => handleChange(e.target.value, item.value)}
               value={currentValue}
+              style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
               required
             />
           </>
@@ -28,7 +29,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
         case 'code':
         return (
           <>
-            <Form.Label>{item.label}</Form.Label>
+            <Form.Label style={{height: '10px'}}>{item.label}</Form.Label>
             <Form.Control
               type="text"
               id={item.label}
@@ -36,6 +37,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
               value={currentValue}
               pattern="([A-Z][0-9]){3}"
                placeholder="A1A1A1"
+               style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
               required
             />
           </>
@@ -45,7 +47,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
         return (
           <>
           <br></br>
-            <h5><Form.Label>{item.label}</Form.Label></h5>
+            <h5><Form.Label style={{height: '10px'}}>{item.label}</Form.Label></h5>
             <Credit />
           </>
         )
@@ -53,7 +55,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'tel':
         return (
             <>
-            <Form.Label>{item.label}</Form.Label>
+            <Form.Label style={{height: '10px'}}>{item.label}</Form.Label>
             <Form.Control
                 type="tel"
                 id={item.label}
@@ -61,6 +63,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
                 value={currentValue}
                 pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 placeholder="xxx-xxx-xxxx"
+                style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                 required
             />
             </>
@@ -69,7 +72,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'email':
         return (
             <>
-            <Form.Label>{item.label}</Form.Label>
+            <Form.Label style={{height: '10px'}}>{item.label}</Form.Label>
             <Form.Control
                 type="email"
                 id={item.label}
@@ -77,6 +80,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
                 value={currentValue}
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 placeholder="xxxx@xxxx.xx"
+                style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
                 required
             />
             </>
@@ -85,12 +89,13 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'number':
         return (
           <>
-            <Form.Label htmlFor="ages">{item.label}</Form.Label>
+            <Form.Label style={{height: '10px'}} htmlFor="ages">{item.label}</Form.Label>
             <Form.Control
               type="number"
               id="ages"
               aria-describedby="ages"
               onChange={(e) => onChange(e.target.value, item.value)}
+              style={{marginBottom: '20px', borderColor: '#e7e0e0'}}
               required
             />
           </>
@@ -105,7 +110,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'select':
         return (
           <div className="mt-2">
-            <Form.Select aria-label={item.label} onChange={(e) => onChange(e.target.value, item.value)}>
+            <Form.Select style={{marginBottom: '20px', borderColor: '#e7e0e0'}} aria-label={item.label} onChange={(e) => onChange(e.target.value, item.value)}>
               <option>{item.label}</option>
               {
                 item.options.map((opt, index) => {
@@ -117,9 +122,5 @@ export const FormItem =  ({ item, onChange, answer })  => {
             </Form.Select>
           </div>
         )
-
-      return (
-        <></>
-      )
     }
   };

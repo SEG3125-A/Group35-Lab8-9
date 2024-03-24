@@ -12,13 +12,13 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link" activeStyle={{
-                  color: "red"
+                  color: "#b22222"
                 }} aria-current="page" exact to="/">Home</NavLink>
               </li>
 
               <li className="nav-item dropdown">
                 <NavLink className="nav-link dropdown-toggle" exact to="/services" activeStyle={{
-                  color: "red"
+                  color: "#b22222"
                 }} id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </NavLink>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <NavLink className="nav-link" exact to="/products" activeStyle={{
-                  color: "red"}} >
+                  color: "#b22222"}} >
                   Products
                 </NavLink>
                 {/* id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
@@ -48,17 +48,17 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" exact to="/booking" activeStyle={{
-                  color: "red"
+                  color: "#b22222"
                 }}>Booking</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" exact to="/contact" activeStyle={{
-                  color: "red"
+                  color: "#b22222"
                 }}>Contact</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" exact to="/faq" activeStyle={{
-                  color: "red"
+                  color: "#b22222"
                 }}>FAQ</NavLink>
               </li>
               

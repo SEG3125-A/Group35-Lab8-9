@@ -49,7 +49,7 @@ const Cart = () => {
       <div>
         <div id="checkoutTotal">Total : {sum}$</div>
         <div className="d-grid gap-2 col-1 mx-auto" >
-          <button className="btn btn-danger btn-sm" onClick={handleClick}>CHECKOUT</button>
+          <button className='addCart' style={{ fontSize: '1.6ex', backgroundColor: 'linear-gradient(#b22222)', color: 'white'}} onClick={handleClick}>CHECKOUT</button>
 
           <button className="btn btn-dark btn-sm" onClick={clearCart}>CLEAR</button>
         </div>
