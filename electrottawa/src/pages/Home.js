@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 function Home() {
     return (
-    <div class="container">
+    <div class="container containerHome">
         <div id="welcome-section">
             <h1>Welcome To ElectrOttawa</h1>
             <p>Your finest phone/laptop repair shop and the best stop for finding your next electronic acquisition.</p>
