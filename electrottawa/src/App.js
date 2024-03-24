@@ -16,6 +16,8 @@ import { SignIn } from './pages/SignIn';
 import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 import { DashBoard } from './pages/DashBoard';
+import LaptopRepair from './pages/LaptopRepair';
+import PhoneRepair from './pages/PhoneRepair';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path='/' exact component={Home} /> 
           <Route path='/products' component={Products} />
           <Route path='/services' component={Services} />
+          <Route path='/laptopRepair' component={LaptopRepair} />
+          <Route path='/phoneRepair' component={PhoneRepair} />
           <Route path='/booking' component={Booking} />
           <Route path='/contact' component={Contact} />
           <Route path='/faq' component={Faq} />

@@ -21,7 +21,7 @@ const Footer =() => {
       </div>
       <section>
         <div class='col'style={{textAlign: 'center', marginTop: '25px'}}>
-          <small style={{color: 'white'}}>Lolita, Amani, Leo, David - ElectrOttawa  © 2024</small>
+          <small style={{color: 'white'}}>Lolita, Amani, Leon, David - ElectrOttawa  © 2024</small>
 
         </div>
       </section>

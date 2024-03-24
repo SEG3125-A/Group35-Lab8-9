@@ -24,8 +24,8 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><Link className="dropdown-item" to="/services">All services</Link></li>
-                  <li><Link className="dropdown-item" to="/">Laptop repair</Link></li>
-                  <li><Link className="dropdown-item" to="/">Phone repair</Link></li>
+                  <li><Link className="dropdown-item" to="/laptopRepair">Laptop repair</Link></li>
+                  <li><Link className="dropdown-item" to="/phoneRepair">Phone repair</Link></li>
                 </ul>
               </li>
 
