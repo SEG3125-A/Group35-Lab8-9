@@ -60,34 +60,28 @@ button {
 }
 
 button:hover {
-    background-color: #8a3c3b; /* A slightly darker pink for hover effect */
+    background-color: #8a3c3b;
+}
+
+.form-section {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px; 
 }
 
 .info-section {
-    display: block; /* Enables flexbox layout */
-    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
-    justify-content: space-between; /* Puts space between the map and contact info */
-    align-items: flex-start; /* Aligns items to the start of the flex container */
-    gap: 20px; /* Adds space between flex items */
-    width: 50%; /* Takes full width of the container */
+    flex: 1;
+    min-width: 300px; 
 }
 
 #map {
-   
-    min-width: 250px; /* Minimum width before wrapping */
-    height: 250px; /* Fixed height */
+    width: 100%; 
+    height: 450px; 
 }
 
 .contact-info {
+    margin-top: 20px; 
    
-    min-width: 250px; /* Minimum width before wrapping */
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
 }
 
-.contact-info p {
-    margin: 0 0 30px 0;
-}
 
