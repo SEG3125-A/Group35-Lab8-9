@@ -13,6 +13,7 @@ import Cart from './pages/Cart';
 import Profile from './pages/Profile';
 import Checkout from './pages/Checkout';
 import { SignIn } from './pages/SignIn';
+import ProductDetails from './pages/ProductDetails';
 import Footer from './components/Footer';
 import { DashBoard } from './pages/DashBoard';
 
@@ -36,9 +37,10 @@ function App() {
           <Route path='/checkout' component={Checkout} />
           <Route path='/signIn' component={SignIn}/>
           <Route path='/dashboard' component={DashBoard}/>
+          <Route path='/product_details' component={ProductDetails}/>
 
         </Switch>
-
+        <Footer/>
       </Router>
       </CartContextProvider>
     </div>

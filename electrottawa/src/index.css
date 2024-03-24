@@ -58,11 +58,16 @@ body {
 }
 
 #navigationBar {
-  background-color: #FFF3F3;
+  background-color: #f8e1e1;
 }
 
+.nav-item{
+  font-weight: 200;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 #navbarSupportedContent {
-  margin-left: 35%;
+  margin-left: 0%;
 }
 
 .material-symbols-outlined {
@@ -74,9 +79,11 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #f4c5c5;
-  border-radius: 6px ;
+  border-bottom-style:solid ;
+  border-bottom-color: red;
+  border-bottom-width: 4px;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

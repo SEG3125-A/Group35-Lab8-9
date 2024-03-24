@@ -1,14 +1,13 @@
 import { Link, NavLink } from "react-router-dom"
-var category;
 const Navbar = () => {
   return (
     <div id="navigationBar">
 
       {/* creation of the navbar component inspired by https://getbootstrap.com/docs/5.0/components/navbar/*/}
-      <h1 className="p-1">ElectrOttawa</h1>
+      {/* <h1 className="p-1" style={{fontWeight: "bolder", height: "40px", fontFamily: 'monospace'}}>ElectrOttawa</h1> */}
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid d-flex bd-highlight">
-
+          <div className=" p-2 flex-xl-shrink-1 bd-highlight"> <Link exact to="/"  style={{fontWeight: "bolder", fontSize: "30px", fontFamily: 'consolas', textDecoration: "none", color: 'black'}}>ElectrOttawa</Link></div>
           <div className=" p-2 flex-xl-shrink-1 bd-highlight" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -30,12 +29,12 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              <li className="nav-item dropdown">
-                <NavLink className="nav-link dropdown-toggle" exact to="/products" activeStyle={{
-                  color: "red"
-                }} id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <li className="nav-item">
+                <NavLink className="nav-link" exact to="/products" activeStyle={{
+                  color: "red"}} >
                   Products
                 </NavLink>
+                {/* id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li>
                     <Link className="dropdown-item" to="/products">All products</Link>
@@ -45,7 +44,7 @@ const Navbar = () => {
                   <li><Link className="dropdown-item" to="/products">Smart Watches</Link></li>
                   <li><Link className="dropdown-item" to="/products">Phone Cases</Link></li>
                   <li><Link className="dropdown-item" to="/products">Audio</Link></li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" exact to="/booking" activeStyle={{
