@@ -18,45 +18,35 @@ import Footer from './components/Footer';
 import { DashBoard } from './pages/DashBoard';
 import LaptopRepair from './pages/LaptopRepair';
 import PhoneRepair from './pages/PhoneRepair';
-
-import { IntlProvider } from "react-intl";
-import { useState,useEffect } from 'react';
-
+import { useEffect } from "react";
 
 function App() {
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
 
-
-  // setting up state for locale and messages
-  const [locale, setLocale] = useState("en");
-  const [messages, setMessages] = useState({
-    "app.home": "Home",
-    "app.services":"Services",
-    "app.products":"Products",
-    "app.booking":"Booking",
-    "app.contact":"Contact",
-    "app.faq":"FAQ",
-  })
-
-
-   // function to dynamically import messages depending on locale
-   useEffect(() => {
-    import(`./Locales/${locale}.json`).then((messages) => {
-      console.log({
-        messages,
-      });
-      setMessages(messages);
-    });
-  }, [locale]);
-
- 
   return (
-    <>
-    <IntlProvider messages={messages} key={locale} locale={locale}>
-      <div className="App">
-        <CartContextProvider>
-          <Router> 
-            <Navbar/> 
-            <Switch>
+    <div className="App">
+      <div id="google_translate_element" className='bg-white'></div>
+      <CartContextProvider>
+     <Router> 
+        <Navbar/> 
+        <Switch>
 
             <Route path='/' exact component={Home} /> 
             <Route path='/products' component={Products} />
@@ -77,22 +67,7 @@ function App() {
             <Footer/>
           </Router>
         </CartContextProvider>
-        
-        <select
-                onChange={(e) => {
-                  setLocale(e.target.value);
-                }}
-                value={locale}
-                name="language-select"
-                id="language-select"
-                className="select-input"
-              >
-                <option value="fr">French</option>
-                <option value="en">English</option>
-              </select>
-      </div>
-    </IntlProvider>
-    </>
+      </div>        
     );
 }
 
