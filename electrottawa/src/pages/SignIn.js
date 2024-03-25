@@ -91,7 +91,7 @@ export const SignIn=()=>{
     }
 
     const goToCreateAccountForm = ()=>{
-        history.push("/");
+        history.push("/createAccount");
     }
     return(
         <> {!authenticated ? 

@@ -18,7 +18,9 @@ import Footer from './components/Footer';
 import { DashBoard } from './pages/DashBoard';
 import LaptopRepair from './pages/LaptopRepair';
 import PhoneRepair from './pages/PhoneRepair';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { CreateAccount } from './pages/CreateAccount';
+
 
 function App() {
   const googleTranslateElementInit = () => {
@@ -40,6 +42,7 @@ function App() {
     window.googleTranslateElementInit = googleTranslateElementInit;
   }, []);
 
+  
   return (
     <div className="App">
       <div id="google_translate_element" className='bg-white'></div>
@@ -59,10 +62,10 @@ function App() {
             <Route path='/cart' component={Cart} />
             <Route path='/profile' component={Profile} />
             <Route path='/checkout' component={Checkout} />
-            <Route path='/signIn' component={SignIn}/>
+            <Route path="/signIn" component={SignIn}/>
             <Route path='/dashboard' component={DashBoard}/>
+            <Route path="/createAccount" component={CreateAccount}/>
             <Route path='/product_details' component={ProductDetails}/>
-
             </Switch>
             <Footer/>
           </Router>

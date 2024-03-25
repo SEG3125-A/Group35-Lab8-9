@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
   return (
@@ -16,7 +15,7 @@ const Navbar = () => {
                 <NavLink className="nav-link" activeStyle={{
                   color: "#b22222"
                 }} aria-current="page" exact to="/">
-                  <FormattedMessage id="app.name" defaultMessage={"Home"} />
+                  Home
                 </NavLink>
               </li>
 
@@ -86,7 +85,7 @@ const Navbar = () => {
                   person
                 </span></Link>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" id="lang" role="button" data-bs-toggle="dropdown">
                 <span className="material-symbols-outlined">
                   globe
@@ -95,7 +94,7 @@ const Navbar = () => {
                   <li><Link className="dropdown-item">EN</Link></li>
                   <li><Link className="dropdown-item">FR</Link></li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
