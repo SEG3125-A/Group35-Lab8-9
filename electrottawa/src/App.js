@@ -18,11 +18,30 @@ import Footer from './components/Footer';
 import { DashBoard } from './pages/DashBoard';
 import LaptopRepair from './pages/LaptopRepair';
 import PhoneRepair from './pages/PhoneRepair';
-
+import { useEffect } from "react";
 
 function App() {
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
   return (
     <div className="App">
+      <div id="google_translate_element" className='bg-white'></div>
       <CartContextProvider>
      <Router> 
         <Navbar/> 
