@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import '../Home.css';
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 function Home() {
     return (
     <div class="container containerHome">

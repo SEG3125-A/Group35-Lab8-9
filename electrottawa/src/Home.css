@@ -5,9 +5,11 @@ body {
     background-color:red;
 }
 .containerHome{
-  width: 250px;
+  /* width: 250px; */
+  width: 100%;
   padding: 300px;
   display: flex;
+  overflow-x: hidden;
   background-color: red;
 
 }
