@@ -1,6 +1,26 @@
 import './styles/booking.css'
 import {Link, NavLink} from "react-router-dom"
 
+//saves the values to console
+  const submitForm = () => {
+    var Firstname = document.getElementById("FName").value;
+    var Lastname = document.getElementById("LName").value;
+    var email = document.getElementById("email").value;
+    var service = document.getElementById("service").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("date").value;
+    
+    // Construct the data to be recorded (for simplicity, let's just log it to console)
+    console.log("email:" + email);
+    console.log("name:" + Firstname + " " + Lastname);
+    console.log("date:" + date);
+    console.log("serviceType:" + service);
+    console.log("time:" + time);
+
+    return false;
+  };
+
+
 const Booking = () => {
   return ( 
     <>
@@ -19,12 +39,12 @@ const Booking = () => {
           <input type="text" class="form-control" placeholder="Enter your last name" id="LName" required></input>
         </div>
         <div class="col-12">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="validationCustom03" placeholder="Enter your Email" aria-describedby="emailHelp" required></input>
+          <label for="email1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your Email" aria-describedby="emailHelp" required></input>
         </div>
         <div class="col-12">
-          <label for="validationCustom04" class="form-label">Service</label>
-          <select class="form-control" id="validationCustom04" required>
+          <label for="service" class="form-label">Service</label>
+          <select class="form-control" id="service" required>
             <option selected disabled value="">Click to choose a service</option>
             <option value="LBP">Laptop Battery Replacement</option>
             <option value="LSR">Laptop Screen Replair</option>
@@ -38,12 +58,12 @@ const Booking = () => {
           </select>
         </div>
         <div class="col-12">
-          <label for="validationCustom05" class="form-label">Date</label>
-          <input type="date" class="form-control" id="validationCustom05" required></input>
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" required></input>
         </div>
         <div class="col-12">
-          <label for="validationCustom06" class="form-label">Time</label>
-          <select class="form-control" id="validationCustom06" required>
+          <label for="time6" class="form-label">Time</label>
+          <select class="form-control" id="time" required>
             <option selected disabled value="">Click to choose a time</option>
             <option value="9:00 AM">9:00 AM</option>
             <option value="9:30 AM">9:30 AM</option>
@@ -65,7 +85,7 @@ const Booking = () => {
           </select>
         </div>
         <div class="col-12" style={{marginBottom: '0%'}}>
-          <button type="submit" style={{color:"white"}}>Book</button>
+          <button type="submit" style={{color:"white"}} onClick={submitForm}>Book</button>
         </div>
       </form>
     </div>
